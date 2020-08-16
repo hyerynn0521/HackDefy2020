@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+		
+		<title> Statistics </title>
+    
+		<link href="style.css" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Micrograms of Small Particulate Matter per cubic meter'],
+          ['2000',  13.56],
+          ['2002',  13.08],
+          ['2004',  12.14],
+          ['2006',  11.67],
+					['2008',  10.86],
+          ['2010',  9.94],
+          ['2012',  9.18],
+          ['2014',  8.87],
+					['2016',  7.90],
+          ['2018',  8.23]
+        ]);
+
+        var options = {
+          title: 'National Average Small Particulate Matter',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+	</head>
+
+	<head>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Percent'],
+          ['China', '4.5'],
+          ['United States', '2.00'],
+          ['India', '1.25'],
+          ['Russia', '0.75'],
+					['Japan', '1.00'],
+					['Other', '13.34']
+        ]);
+
+        var options = {
+          title: 'Global CO2 Emissions from Fossil Fuel Combustion in metric tons'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+  </head>
+	
+  <body>
+    <script src="script.js"></script>
+		<p></p>
+  </body>
+
+  
+<center><img src="now.png" style = "width: 8%;"></center><h1 style="text-align: center">Greener Earth</h1>
+<style>
+  h1, p{
+    font-family: "Trebuchet MS", Helvetica, Sans-serif;
+  }
+  p{
+    font-size: 20px;
+  }
+</style> 
+
+
+<body>
+<div class="tabs.html">
+	<ul>
+		<li><a href="aboutus.html">About us</a></li>
+		<li><a href="ourmission.html">Our mission</a></li>
+		<li><a href="help.html">How you can help</a></li>
+		<li><a href="lesson.html">Interactive lesson</a></li>
+		<li><a href="contribution.html">Statistics</a></li>
+	</ul>
+
+</div>
+<p>This graph shows that the particulate matters are decreasing, which makes us hopeful for the possibility of recovering environment.</p>
+<body style="background-color:powderblue;">
+
+	<div id="curve_chart" style="width: 900px; height: 500px"></div>
+  <br><br>
+	
+	<div id="piechart_3d" style="width: 90px; height: 50px;"></div>
+
+  <p> In this graph, we can see that air pollution is no.4 leading cause of death in the world, showing the seriousness of air pollution</p>
+
+	
+
+  <img src="graph1.png" style ="width:900px; height: 500px;">
+
+
+
+
+<p>The pie chart below showcases the rough percentages of major pollutants that enter our oceans yearly. Air pollution contributes a main source of ocean pollution as well as runoff and sewage. Click on the graph to learn more about ocean pollution: </p>
+
+<p> <a href="http://www.informaction.org/index.php?menu=menua.txt&main=waterpol_gen.txt&s=Water+sewage" target="_blank"> <img src="http://www.blueplanet.nsw.edu.au/SiteFiles/blueplanetnsweduau/oceanography_water_pollution1.jpg" alt="Ocean Pollutants Pie Chart" width="400px" height="400px" /> </a> </p>
+  
+
+</body>
+</html>

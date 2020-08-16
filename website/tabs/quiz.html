@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+		
+		<title> Home page</title>
+    
+		<link href="quiz.css" rel="stylesheet" type="text/css" />
+    
+    <link href="quiz.js" type = "text/javascript"/>
+    
+  </head>
+	
+  
+    
+		
+  
+
+  
+<center><img src="now.png" style = "width: 8%;"></center><h1 style="text-align: center">Greener Earth</h1>
+<style>
+  h1{
+    font-family: "Trebuchet MS", Helvetica, Sans-serif;
+  }
+</style>
+
+
+<body>
+
+	<ul>
+		<li><a href="aboutus.html">About us</a></li>
+		<li><a href="ourmission.html">Our mission</a></li>
+		<li><a href="help.html">How you can help</a></li>
+		<li><a href="lesson.html">Interactive lesson</a></li>
+		<li><a href="contribution.html">Statistics</a></li>
+	</ul>
+
+
+
+<body style="background-color:powderblue;">
+</body>
+<body>
+  <button type="button"><a href = "lesson.html">go back</a></button>
+    <br>
+<p>Take this quiz to see how much you've understood! 
+<div id="quiz">
+  <h3>Q1. Which element is NOT involved in the acid rain cycle?</h3>
+<label class="container">
+  <input type="checkbox"  name="checkbox">
+  <span class="checkmark"></span>
+  NOx
+</label>
+<label class="container">
+  <input type="checkbox" name="checkbox">
+  <span class="checkmark"></span>
+  Oxygen
+</label>
+<label class="container">
+  <input type="checkbox" name="checkbox">
+  <span class="checkmark"></span>
+  Water
+</label>
+<label class="container">
+  <input type="checkbox" name="checkbox">
+  <span class="checkmark"></span>
+  SOx
+</label>
+<label class="container">
+  <input type="checkbox" name="checkbox">
+  <span class="checkmark"></span>
+  SO2
+</label>
+<br>
+<h3>Q2. Where is NOx emitted from?</h3>
+<label class="container">
+  <input type="checkbox" name="checkbox">
+  <span class="checkmark"></span>
+  Animals
+</label>
+<label class="container">
+  <input type="checkbox" name="checkbox">
+  <span class="checkmark"></span>
+  Cars
+</label>
+<label class="container">
+  <input type="checkbox" name="checkbox">
+  <span class="checkmark"></span>
+  Clouds
+</label>
+<h3>Q3. Advanced level: pH level of acids is</h3>
+<label class="container">
+  <input type="checkbox"  name="checkbox">
+  <span class="checkmark"></span>
+  low
+</label>
+<label class="container">
+  <input type="checkbox" name="checkbox">
+  <span class="checkmark"></span>
+  high
+</label>
+<label class="container">
+  <input type="checkbox" name="checkbox">
+  <span class="checkmark"></span>
+  middle
+</label>
+<label class="container">
+  <input type="checkbox" name="checkbox">
+  <span class="checkmark"></span>
+  neutral
+</label>
+</div>
+<br>
+<br>
+<center><button id="submit" onclick="myFunction()">Check Answers</button></center>
+<div id="results"></div>
+</body>
+<center><p id="demo"></p></center>
+<style>
+  body{
+    font-family: "Trebuchet MS", Helvetica, Sans-serif;
+    right:20%;
+    left:20%
+  }
+</style>
+<script>
+  function myFunction() {
+  document.getElementById("demo").innerHTML = "1. SOx, 2. Cars, 3. low";
+}
+
+</script>
+</html>
